@@ -42,7 +42,7 @@ describe("fibSequence",()=>{
 //Pseudo:
 //Input:number greater than 2
 //Output: array
-//we will create a function called fibSequence that will first check if the number is greater than 2. If not it will return an eror. Then we will create a function fibNum that will take in an array of 0 and 1 because 0 and 1 are the always the first two numbers of the fib sequence. next a for loop to calculate the numbers of the fib sequence and store them in an array. Then console log the given fibLength numbers and we should expect to see [ 1, 1, 2, 3, 5, 8 ] and [  1,  1,  2,  3,  5,  8, 13, 21, 34, 55].
+//we will create a function called fibSequence that will first check if the number is less than 3. If not it will return an eror. Then we will create a function fibNum that will take in an array of 1 and 1 because 1 and 1 will be the first two numbers of the fib sequence. next a for loop to calculate the numbers of the fib sequence and store them in an array. Then console log the given fibLength numbers and we should expect to see [ 1, 1, 2, 3, 5, 8 ] and [  1,  1,  2,  3,  5,  8, 13, 21, 34, 55].
 
 const fibSequence = (num) => {
   if (num < 3) {
@@ -159,7 +159,7 @@ describe("accuSum",()=>{
 //pseudo
 //input: array
 //output: an array of accumulating sums.
-//First im going to create a function called accuSum. Then we'll create a new variable called sum and set that = 0. Its equal to 0 because I want 0 to be th initial value before we use any methods. Next ill use the .map function to iterate over the array and at each iteration i want the current value to be added to the sum. Then ill create a function for of the given arrays and call them to get the expected outputs of [100, 83, 60, 51] , [250, 161, 261, 165] , and [].
+//First im going to create a function called accuSum. Then we'll create a new variable called sum and set that = 0. Its equal to 0 because I want 0 to be the initial value before we use any methods. Next ill use the .map function to iterate over the array and at each iteration i want the current value to be added to the sum. Then ill create a function for of the given arrays and call them to get the expected outputs of [100, 83, 60, 51] , [250, 161, 261, 165] , and []. The output arrays will be the same size as the inputs because we used the .map method.
 
 
 const accuSum = (arr) => {
